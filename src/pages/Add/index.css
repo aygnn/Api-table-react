@@ -1,0 +1,44 @@
+.main{
+
+    text-align: center;
+   
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    margin: 15px;
+    width: 40%;
+    height: 59px;
+    border: 1px solid #96c358;
+    border-radius: 5px;
+}
+input::placeholder{
+    font-size: 19px;
+}
+h2{
+    font-size: 29px;
+    color: green;
+}
+.addbtn{
+    background-color: red;
+    color: white;
+    height: 59px;
+    width: 80%;
+}
+.backbtn{
+    background-color: #1976d2;
+    color: white;
+    height: 59px;
+    width: 80%;
+}
+.add{
+    color: white;
+    text-decoration: none;
+}
+.button{
+    gap: 14px;
+    display: flex;
+}

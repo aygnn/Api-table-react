@@ -1,0 +1,27 @@
+
+.trash{
+  display: flex;
+  justify-content: flex-end;
+}
+.addpage{
+  color: white;
+  text-decoration: none;
+}
+.table{
+  border: 2px solid black;
+}
+.addpagebtn{
+  background-color: #1976d2;
+  color: white;
+  height: 42px;
+  width: 6%;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.h2{
+  color: #1976d2;
+}
