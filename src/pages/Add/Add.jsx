@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import './index.css';
+import './Add.css';
 import Button from '@mui/material/Button';
 import {useState,useEffect} from 'react'
 import axios from 'axios';
@@ -35,6 +35,7 @@ export default function Index() {
 
   return (
     <>
+    
     <div className='main'>
       <div className='div'>
       <h2>Add New Api</h2>
@@ -44,7 +45,7 @@ export default function Index() {
       <div>
       <div className='button'>
       <Button onClick={addData} className='addbtn' variant="contained" color="success">Add</Button>
-      <Button className='backbtn' variant="contained" ><Link className='add' to={'/'}>Go Back</Link></Button>
+      <Link className='add' to={'/'}> <Button className='backbtn' variant="contained" >Go Back</Button></Link>
       </div>
       </div>
 

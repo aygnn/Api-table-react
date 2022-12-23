@@ -10,16 +10,37 @@ import {
 }
  from "react-router-dom";
 
-import Add from './pages/Add'
+import Add from './pages/Add/Add'
+import View from './pages/View/View'
+import Table from './pages/Table/Table'
+import Edit from './pages/Edit/Edit'
 
-const router = createBrowserRouter([
+
+
+
+const router = createBrowserRouter(    
+  [
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "add",
-    element: <Add />,
+    children:[
+      {
+        path:"/",
+        element: <Table />,
+      },
+      {
+        path:"view/:supID",
+        element:<View/>
+      },
+      {
+        path:"edit/:supID",
+        element:<Edit/>
+      },
+      {
+        path: "add",
+        element: <Add />,
+      },
+    ]
   },
 ]);
 
